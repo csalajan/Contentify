@@ -42,7 +42,12 @@
 <body>
     <header id="header" onclick="window.location='{!! route('home') !!}'">
         <div class="container">
-            <h2>Contentify Testpage</h2>
+            <div class="top-bar">
+                <a class="header-logo">Nexient Championship Series</a>
+                <div class="right">
+                    @widget('Auth::Login')
+                </div>
+            </div>
         </div>
     </header>
     <div class="container">       
